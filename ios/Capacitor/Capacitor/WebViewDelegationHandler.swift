@@ -184,7 +184,7 @@ internal class WebViewDelegationHandler: NSObject, WKNavigationDelegate, WKUIDel
                 let options = dict["options"] as? [String: Any] ?? [:]
 
                 if pluginId != "Console" {
-                    CAPLog.print("⚡️  To Native -> ", pluginId, method, callbackId)
+                    //CAPLog.print("⚡️  To Native -> ", pluginId, method, callbackId)
                 }
 
                 bridge.handleJSCall(call: JSCall(options: options, pluginId: pluginId, method: method, callbackId: callbackId))
