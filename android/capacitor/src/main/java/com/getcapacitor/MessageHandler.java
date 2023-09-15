@@ -86,10 +86,10 @@ public class MessageHandler {
                 String methodName = postData.getString("methodName");
                 JSObject methodData = postData.getJSObject("options", new JSObject());
 
-                Logger.verbose(
-                    Logger.tags("Plugin"),
-                    "To native (Capacitor plugin): callbackId: " + callbackId + ", pluginId: " + pluginId + ", methodName: " + methodName
-                );
+                //Logger.verbose(
+                //    Logger.tags("Plugin"),
+                //    "To native (Capacitor plugin): callbackId: " + callbackId + ", pluginId: " + pluginId + ", methodName: " + methodName
+                //);
 
                 this.callPluginMethod(callbackId, pluginId, methodName, methodData);
             }
